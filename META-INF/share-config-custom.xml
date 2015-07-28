@@ -44,6 +44,29 @@
             <indicator id="isEmptyTranslation" index="220" icon="emptytranslation-16.png" label="is.emptytranslation.document">
                 <evaluator negate="false">evaluator.doclib.metadata.isEmptyTranslation</evaluator>
             </indicator>
+
+            <indicator id="isEnglish" index="220" icon="english.png" label="is.language.english">
+                <evaluator negate="false">evaluator.doclib.metadata.isEnglish</evaluator>
+            </indicator>
+            <indicator id="isFrench" index="220" icon="french.png" label="is.language.french">
+                <evaluator negate="false">evaluator.doclib.metadata.isFrench</evaluator>
+            </indicator>
+            <indicator id="isGerman" index="220" icon="german.png" label="is.language.german">
+                <evaluator negate="false">evaluator.doclib.metadata.isGerman</evaluator>
+            </indicator>
+            <indicator id="isSpanish" index="220" icon="spanish.png" label="is.language.spanish">
+                <evaluator negate="false">evaluator.doclib.metadata.isSpanish</evaluator>
+            </indicator>
+            <indicator id="isRussian" index="220" icon="russian.png" label="is.language.russian">
+                <evaluator negate="false">evaluator.doclib.metadata.isRussian</evaluator>
+            </indicator>
+            <indicator id="isChinese" index="220" icon="chinese.png" label="is.language.chinese">
+                <evaluator negate="false">evaluator.doclib.metadata.isChinese</evaluator>
+            </indicator>
+            <indicator id="isChinese" index="220" icon="japanese.png" label="is.language.japanese">
+                <evaluator negate="false">evaluator.doclib.metadata.isJapanese</evaluator>
+            </indicator>
+
         </indicators>
    </config>
    

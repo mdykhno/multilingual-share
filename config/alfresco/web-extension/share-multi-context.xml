@@ -10,7 +10,7 @@
          </list>
       </property>
    </bean>
-   
+
    <bean id="evaluator.doclib.metadata.isEmptyTranslation" class="org.alfresco.web.evaluator.HasAspectEvaluator">
       <property name="aspects">
          <list>
@@ -29,5 +29,74 @@
          </list>
       </property>
    </bean>
+
+
+   <bean id="evaluator.doclib.metadata.isEnglish" class="org.alfresco.web.evaluator.IsEngLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+
+   <bean id="evaluator.doclib.metadata.isFrench" class="org.alfresco.web.evaluator.IsFrenchLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isGerman" class="org.alfresco.web.evaluator.IsGermanLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isSpanish" class="org.alfresco.web.evaluator.IsSpanishLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isRussian" class="org.alfresco.web.evaluator.IsRussianLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isChinese" class="org.alfresco.web.evaluator.IsChineseLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isArabic" class="org.alfresco.web.evaluator.IsAraLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isJapanese" class="org.alfresco.web.evaluator.IsJapaneseLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+
+
    
 </beans>

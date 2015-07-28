@@ -1,0 +1,51 @@
+<project name="ALFRESCO" basedir=".">
+
+    <property file="build.dima.properties"/>
+
+    <path id="yuicompressor.classpath">
+        <fileset dir="lib">
+            <include name="ml-ant-http-1.1.1.jar"/>
+        </fileset>
+    </path>
+
+    <taskdef name="http" classname="org.missinglink.ant.task.http.HttpClientTask">
+        <classpath>
+            <path refid="yuicompressor.classpath"/>
+        </classpath>
+    </taskdef>
+
+
+    <target name="Copy">
+        <copy taskname="copy jar" todir="${alfresco.share.lib}" overwrite="true">
+            <fileset dir="${sharemulti.jar}">
+                <include name="multilingual-share.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+
+
+    <target name="reload share context" depends="Copy">
+
+
+        <!--http://blyx.com/2013/05/30/how-to-enable-tomcat-manager-in-an-alfresco-installation/-->
+
+        <http url="http://localhost:8080/manager/html/reload"
+              method="POST"
+              printrequest="false"
+              printrequestheaders="false"
+              printresponse="false"
+              printresponseheaders="false"
+              expected="200"
+              failonunexpected="true">
+            <credentials username="manager" password="manager"/>
+            <query>
+                <parameter name="path" value="/share"/>
+            </query>
+        </http>
+
+
+
+    </target>
+
+</project>
