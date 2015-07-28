@@ -283,15 +283,25 @@ function OnSelectionChange (select) {
 
                     var languages =
 				   '<select id="' + scope.id + '|language"' + ' onchange="OnSelectionChange(this);"' + ' name="' + item.nodeRef +'">' +
-                                        '<option id="' + scope.id + '|en" ' + scope.fnIsLangSelected('en',selectedLanguage) + ' name="' + item.nodeRef + '">English</option>' +
-                                        '<option id="' + scope.id + '|fr" ' + scope.fnIsLangSelected('fr',selectedLanguage) + ' name="' + item.nodeRef + '">French</option>' +
-                                        '<option id="' + scope.id + '|es" ' + scope.fnIsLangSelected('es',selectedLanguage) + ' name="' + item.nodeRef + '">Spanish</option>' +
-                                        '<option id="' + scope.id + '|de" ' + scope.fnIsLangSelected('de',selectedLanguage) + ' name="' + item.nodeRef + '">German</option>' +
-                                        '<option id="' + scope.id + '|ru" ' + scope.fnIsLangSelected('ru',selectedLanguage) + ' name="' + item.nodeRef + '">Russian</option>' +
-                                        '<option id="' + scope.id + '|zh" ' + scope.fnIsLangSelected('zh',selectedLanguage) + ' name="' + item.nodeRef + '">Chinese</option>' +
-                                        '<option id="' + scope.id + '|ar" ' + scope.fnIsLangSelected('ar',selectedLanguage) + ' name="' + item.nodeRef + '">Arabic</option>' +
-                                        '<option id="' + scope.id + '|ja" ' + scope.fnIsLangSelected('ja',selectedLanguage) + ' name="' + item.nodeRef + '">Japanese</option>' +
-                                   '</select>';
+                       '<option id="' + scope.id + '|en" ' + scope.fnIsLangSelected('en',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="en"'+'>English</option>' +
+                       '<option id="' + scope.id + '|fr" ' + scope.fnIsLangSelected('fr',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="fr"'+'>French</option>' +
+                       '<option id="' + scope.id + '|es" ' + scope.fnIsLangSelected('es',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="es"'+'>Spanish</option>' +
+                       '<option id="' + scope.id + '|de" ' + scope.fnIsLangSelected('de',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="de"'+'>German</option>' +
+                       '<option id="' + scope.id + '|ru" ' + scope.fnIsLangSelected('ru',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="ru"'+'>Russian</option>' +
+                       '<option id="' + scope.id + '|zh" ' + scope.fnIsLangSelected('zh',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="zh"'+'>Chinese</option>' +
+                       '<option id="' + scope.id + '|ar" ' + scope.fnIsLangSelected('ar',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="ar"'+'>Arabic</option>' +
+                       '<option id="' + scope.id + '|ja" ' + scope.fnIsLangSelected('ja',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="ja"'+'>Japanese</option>' +
+
+
+                       //'<option id="' + scope.id + '|en" ' + scope.fnIsLangSelected('en',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="en"'+'>English</option>' +
+                       //'<option id="' + scope.id + '|fr" ' + scope.fnIsLangSelected('fr',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="fr"'+'>French</option>' +
+                       //'<option id="' + scope.id + '|es" ' + scope.fnIsLangSelected('es',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="es"'+'>Spanish</option>' +
+                       //'<option id="' + scope.id + '|de" ' + scope.fnIsLangSelected('de',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="de"'+'>German</option>' +
+                       //'<option id="' + scope.id + '|ru" ' + scope.fnIsLangSelected('ru',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="ru"'+'>Russian</option>' +
+                       //'<option id="' + scope.id + '|zh" ' + scope.fnIsLangSelected('zh',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="zh"'+'>Chinese</option>' +
+                       //'<option id="' + scope.id + '|ar" ' + scope.fnIsLangSelected('ar',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="ar"'+'>Arabic</option>' +
+                       //'<option id="' + scope.id + '|ja" ' + scope.fnIsLangSelected('ja',selectedLanguage) + ' name="' + item.nodeRef + '"' +' value="ja"'+'>Japanese</option>' +
+                   '</select>';
                     var template = '<h3 class="name">' + title + '</h3>';
                     template += '<div class="description">' + scope.msg("form.control.object-picker.description") + ': ' + description + '</div>';
                     template += '<div class="viewmode-label">Selected language:'+ languages  + '</div>';

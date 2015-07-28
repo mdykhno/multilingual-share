@@ -18,9 +18,13 @@ public class IsSpanishLanguage extends BaseEvaluator {
             JSONObject decoratedLocale = (JSONObject) this.getProperty(jsonObject, "sys:locale");
             if (decoratedLocale == null)
                 return false;
+            Object isPivot = decoratedLocale.get("ispivotlanguage");
+            if(isPivot == null)
+                return false;
+
+            Boolean isPivotBoolean = (Boolean)isPivot;
             Object language = decoratedLocale.get("value");
-            System.out.println(" - - - - - " + decoratedLocale);
-            return "spanish".equals(language);
+            return isPivotBoolean && "es".equals(language);
         } catch (Exception err) {
             throw new AlfrescoRuntimeException("Failed to run action IsPivotLanguage: " + err.getMessage());
         }

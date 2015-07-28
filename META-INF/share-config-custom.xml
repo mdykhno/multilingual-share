@@ -63,8 +63,11 @@
             <indicator id="isChinese" index="220" icon="chinese.png" label="is.language.chinese">
                 <evaluator negate="false">evaluator.doclib.metadata.isChinese</evaluator>
             </indicator>
-            <indicator id="isChinese" index="220" icon="japanese.png" label="is.language.japanese">
+            <indicator id="isJapanese" index="220" icon="japanese.png" label="is.language.japanese">
                 <evaluator negate="false">evaluator.doclib.metadata.isJapanese</evaluator>
+            </indicator>
+            <indicator id="isArabic" index="220" icon="arabic.png" label="is.language.arabic">
+                <evaluator negate="false">evaluator.doclib.metadata.isArabic</evaluator>
             </indicator>
 
         </indicators>
