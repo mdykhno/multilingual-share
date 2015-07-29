@@ -30,21 +30,33 @@
 
         <!--http://blyx.com/2013/05/30/how-to-enable-tomcat-manager-in-an-alfresco-installation/-->
 
-        <http url="http://localhost:8080/manager/html/reload"
-              method="POST"
+        <!--<http url="http://localhost:8080/manager/html/reload"-->
+              <!--method="POST"-->
+              <!--printrequest="false"-->
+              <!--printrequestheaders="false"-->
+              <!--printresponse="false"-->
+              <!--printresponseheaders="false"-->
+              <!--expected="200"-->
+              <!--failonunexpected="true">-->
+            <!--<credentials username="manager" password="manager"/>-->
+            <!--<query>-->
+                <!--<parameter name="path" value="/share"/>-->
+            <!--</query>-->
+        <!--</http>-->
+
+        <http url="http://localhost:8080/manager/text/reload"
+              method="GET"
               printrequest="false"
               printrequestheaders="false"
               printresponse="false"
               printresponseheaders="false"
               expected="200"
               failonunexpected="true">
-            <credentials username="manager" password="manager"/>
+            <credentials username="manager2" password="manager"/>
             <query>
                 <parameter name="path" value="/share"/>
             </query>
         </http>
-
-
 
     </target>
 

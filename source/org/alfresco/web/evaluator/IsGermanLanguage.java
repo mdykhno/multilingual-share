@@ -1,9 +1,11 @@
 package org.alfresco.web.evaluator;
 
 import org.alfresco.error.AlfrescoRuntimeException;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class IsGermanLanguage extends BaseEvaluator {
     private ArrayList<String> aspects;
@@ -17,12 +19,12 @@ public class IsGermanLanguage extends BaseEvaluator {
             JSONObject decoratedLocale = (JSONObject) this.getProperty(jsonObject, "sys:locale");
             if (decoratedLocale == null)
                 return false;
-            Object isPivot = decoratedLocale.get("ispivotlanguage");
-            if(isPivot == null)
+            Integer isMultiLin = ((JSONArray)((JSONObject)jsonObject.get("node")).get("aspects")).indexOf("cm:mlDocument");
+            if(isMultiLin == -1)
                 return false;
+
             Object language = decoratedLocale.get("value");
-            Boolean isPivotBoolean = (Boolean)isPivot;
-            return isPivotBoolean && "de".equals(language);
+            return Locale.GERMANY.getLanguage().equals(language);
         } catch (Exception err) {
             throw new AlfrescoRuntimeException("Failed to run action IsPivotLanguage: " + err.getMessage());
         }

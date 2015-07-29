@@ -38,9 +38,9 @@
             <indicator id="isPivot" index="200" icon="pivot-16.png" label="is.pivot.document">
                 <evaluator>evaluator.doclib.metadata.isPivotLanguage</evaluator>
             </indicator>
-            <indicator id="isTranslation" index="210" icon="translation-16.png" label="is.translation.document">
-                <evaluator negate="false">evaluator.doclib.metadata.isMultilingual</evaluator>
-            </indicator>
+            <!--<indicator id="isTranslation" index="210" icon="translation-16.png" label="is.translation.document">-->
+                <!--<evaluator negate="false">evaluator.doclib.metadata.isMultilingual</evaluator>-->
+            <!--</indicator>-->
             <indicator id="isEmptyTranslation" index="220" icon="emptytranslation-16.png" label="is.emptytranslation.document">
                 <evaluator negate="false">evaluator.doclib.metadata.isEmptyTranslation</evaluator>
             </indicator>
