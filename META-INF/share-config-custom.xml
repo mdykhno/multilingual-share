@@ -45,34 +45,151 @@
                 <evaluator negate="false">evaluator.doclib.metadata.isEmptyTranslation</evaluator>
             </indicator>
 
-            <indicator id="isEnglish" index="220" icon="english.png" label="is.language.english">
+            <indicator id="isEnglish" index="220" icon="England-16.png" label="is.language.english">
                 <evaluator negate="false">evaluator.doclib.metadata.isEnglish</evaluator>
             </indicator>
-            <indicator id="isFrench" index="220" icon="french.png" label="is.language.french">
+            <indicator id="isFrench" index="220" icon="France-16.png" label="is.language.french">
                 <evaluator negate="false">evaluator.doclib.metadata.isFrench</evaluator>
             </indicator>
-            <indicator id="isGerman" index="220" icon="german.png" label="is.language.german">
+            <indicator id="isGerman" index="220" icon="Germany-16.png" label="is.language.german">
                 <evaluator negate="false">evaluator.doclib.metadata.isGerman</evaluator>
             </indicator>
-            <indicator id="isSpanish" index="220" icon="spanish.png" label="is.language.spanish">
+            <indicator id="isSpanish" index="220" icon="Spain-16.png" label="is.language.spanish">
                 <evaluator negate="false">evaluator.doclib.metadata.isSpanish</evaluator>
             </indicator>
-            <indicator id="isRussian" index="220" icon="russian.png" label="is.language.russian">
+            <indicator id="isRussian" index="220" icon="Russian-16.png" label="is.language.russian">
                 <evaluator negate="false">evaluator.doclib.metadata.isRussian</evaluator>
             </indicator>
-            <indicator id="isChinese" index="220" icon="chinese.png" label="is.language.chinese">
+            <indicator id="isChinese" index="220" icon="China-16.png" label="is.language.chinese">
                 <evaluator negate="false">evaluator.doclib.metadata.isChinese</evaluator>
             </indicator>
-            <indicator id="isJapanese" index="220" icon="japanese.png" label="is.language.japanese">
+            <indicator id="isJapanese" index="220" icon="Japan-16.png" label="is.language.japanese">
                 <evaluator negate="false">evaluator.doclib.metadata.isJapanese</evaluator>
             </indicator>
-            <indicator id="isArabic" index="220" icon="arabic.png" label="is.language.arabic">
+            <indicator id="isArabic" index="220" icon="Arabic-16.png" label="is.language.arabic">
                 <evaluator negate="false">evaluator.doclib.metadata.isArabic</evaluator>
+            </indicator>
+            <indicator id="isBulgarian" index="220" icon="Bulgaria-16.png" label="is.language.bulgarian">
+                <evaluator negate="false">evaluator.doclib.metadata.isBulgarian</evaluator>
+            </indicator>
+            <indicator id="isCzech" index="220" icon="Czech-16.png" label="is.language.czech">
+                <evaluator negate="false">evaluator.doclib.metadata.isCzech</evaluator>
+            </indicator>
+            <indicator id="isGreek" index="220" icon="Greece-16.png" label="is.language.greek">
+                <evaluator negate="false">evaluator.doclib.metadata.isGreek</evaluator>
+            </indicator>
+            <indicator id="isItalian" index="220" icon="Italy-16.png" label="is.language.italian">
+                <evaluator negate="false">evaluator.doclib.metadata.isItalian</evaluator>
+            </indicator>
+            <indicator id="isSouthKorean" index="220" icon="SouthKorea-16.png" label="is.language.korean">
+                <evaluator negate="false">evaluator.doclib.metadata.isSouthKorean</evaluator>
+            </indicator>
+            <indicator id="isHungarian" index="220" icon="Hungary-16.png" label="is.language.hungarian">
+                <evaluator negate="false">evaluator.doclib.metadata.isHungarian</evaluator>
+            </indicator>
+            <indicator id="isPolish" index="220" icon="Poland-16.png" label="is.language.polish">
+                <evaluator negate="false">evaluator.doclib.metadata.isPolish</evaluator>
+            </indicator>
+            <indicator id="isPortuguese" index="220" icon="Portugal-16.png" label="is.language.portuguese">
+                <evaluator negate="false">evaluator.doclib.metadata.isPortuguese</evaluator>
+            </indicator>
+            <indicator id="isSlovak" index="220" icon="Slovakia-16.png" label="is.language.slovak">
+                <evaluator negate="false">evaluator.doclib.metadata.isSlovak</evaluator>
+            </indicator>
+            <indicator id="isFinnish" index="220" icon="Finland-16.png" label="is.language.finnish">
+                <evaluator negate="false">evaluator.doclib.metadata.isFinnish</evaluator>
+            </indicator>
+            <indicator id="isTurkish" index="220" icon="Turkey-16.png" label="is.language.turkish">
+                <evaluator negate="false">evaluator.doclib.metadata.isTurkish</evaluator>
+            </indicator>
+            <indicator id="isCroatian" index="220" icon="Croatia-16.png" label="is.language.croatian">
+                <evaluator negate="false">evaluator.doclib.metadata.isCroatian</evaluator>
+            </indicator>
+            <indicator id="isKazakh" index="220" icon="Kazakhstan-16.png" label="is.language.kazakh">
+                <evaluator negate="false">evaluator.doclib.metadata.isKazakh</evaluator>
             </indicator>
 
         </indicators>
    </config>
-   
+
+    <config evaluator="node-type" condition="event:publication">
+        <forms>
+            <!-- Default form configuration for the tpt:tptModel type -->
+            <form>
+                <field-visibility>
+                    <show id="cm:author" force="true"/>
+                    <show id="p:editor"/>
+                    <show id="p:publicationDay"/>
+                    <show id="p:publicationMonth"/>
+                    <show id="p:publicationYear"/>
+                    <show id="p:rubric"/>
+                    <show id="cm:title" force="true"/>
+                    <show id="p:subtitleNameOfSeries"/>
+                    <show id="cm:summary"/>
+                    <show id="cm:description" force="true"/>
+                    <show id="cm:categories"/>
+                    <show id="cm:taggable" force="true"/>
+                    <show id="p:orderBy"/>
+                    <show id="cm:name"/>
+                    <show id="p:orderInformation"/>
+                    <show id="p:publicationCountry"/>
+                    <show id="p:numberOfPages"/>
+                    <show id="cm:created"/>
+                    <show id="cm:lastThumbnailModification"/>
+                    <show id="cm:creator"/>
+                    <show id="cm:versionLabel"/>
+                    <show id="cm:versionType"/>
+                    <show id="cm:accessed"/>
+                    <show id="cm:autoVersionOnUpdateProps"/>
+                    <show id="cm:locale"/>
+                    <show id="cm:modifier"/>
+                    <show id="cm:modified"/>
+                    <show id="encoding"/>
+                    <show id="size" for-mode="view"/>
+                    <show id="mimetype"/>
+
+                </field-visibility>
+                <appearance>
+                    <field id="cm:name">
+                        <control>
+                            <control-param name="maxLength">255</control-param>
+                        </control>
+                    </field>
+                    <field id="cm:title">
+                        <control template="/org/alfresco/components/form/controls/textfield.ftl" />
+                    </field>
+                    <field id="cm:description">
+                        <control>
+                            <control-param name="activateLinks">true</control-param>
+                        </control>
+                    </field>
+                    <field id="encoding">
+                        <control template="/org/alfresco/components/form/controls/encoding.ftl"/>
+                    </field>
+                    <field id="size">
+                        <control template="/org/alfresco/components/form/controls/size.ftl" />
+                    </field>
+                    <field id="mimetype">
+                        <control template="/org/alfresco/components/form/controls/mimetype.ftl" />
+                    </field>
+                    <field id="cm:taggable">
+                        <control>
+                            <control-param name="compactMode">true</control-param>
+                            <control-param name="params">aspect=cm:taggable</control-param>
+                            <control-param name="createNewItemUri">/api/tag/workspace/SpacesStore</control-param>
+                            <control-param name="createNewItemIcon">tag</control-param>
+                        </control>
+                    </field>
+                    <field id="cm:categories">
+                        <control>
+                            <control-param name="compactMode">true</control-param>
+                            <control-param name="createNewItemIcon">tag</control-param>
+                        </control>
+                    </field>
+                </appearance>
+            </form>
+        </forms>
+    </config>
    
    <!-- Document Library Actions config section -->
    <config evaluator="string-compare" condition="DocLibActions">

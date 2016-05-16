@@ -19,7 +19,7 @@
             {
  			   localized = properties["sys:locale"];
             }
-            return '<span id="' + id + '" class="item">Multiligual:' + localized.value + '</span>';
+            return '<span id="' + id + '" class="item">Multiligual: ' + localized.value + '</span>';
          }
       });
    }

@@ -96,7 +96,108 @@
       </property>
    </bean>
 
+   <bean id="evaluator.doclib.metadata.isBulgarian" class="org.alfresco.web.evaluator.IsBulgarianLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
 
+   <bean id="evaluator.doclib.metadata.isCzech" class="org.alfresco.web.evaluator.IsCzechLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
 
-   
+   <bean id="evaluator.doclib.metadata.isGreek" class="org.alfresco.web.evaluator.IsGreekLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isItalian" class="org.alfresco.web.evaluator.IsItalianLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isSouthKorean" class="org.alfresco.web.evaluator.IsSouthKoreanLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isHungarian" class="org.alfresco.web.evaluator.IsHungarianLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isPolish" class="org.alfresco.web.evaluator.IsPolishLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isPortuguese" class="org.alfresco.web.evaluator.IsPortugueseLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isSlovak" class="org.alfresco.web.evaluator.IsSlovakLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isFinnish" class="org.alfresco.web.evaluator.IsFinnishLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isTurkish" class="org.alfresco.web.evaluator.IsTurkishLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isCroatian" class="org.alfresco.web.evaluator.IsCroatianLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
+   <bean id="evaluator.doclib.metadata.isKazakh" class="org.alfresco.web.evaluator.IsKazakhLanguage">
+      <property name="aspects">
+         <list>
+            <value>cm:mlDocument</value>
+         </list>
+      </property>
+   </bean>
+
 </beans>
